@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Styles from './form.module.css';
+import Styles from './RegisterForm.module.css';
 class RegisterForm extends Component{
     constructor(){
         super();
@@ -12,10 +12,7 @@ class RegisterForm extends Component{
             age : '',
             gender: '',
             profession: '',
-            skills: [],
-            // dateOfBirth: '',
-            // favouriteColor: '',
-            // bio : ''
+            skills: []
         })
     }
 
@@ -67,11 +64,11 @@ class RegisterForm extends Component{
                     </div>
                     <div>
                         <label>Mobile</label>
-                        <input type = 'mobile' name = 'mobile' value = {this.state.mobile} onChange = {this.changeHandler} />
+                        <input type = 'tel' name = 'mobile' value = {this.state.mobile} placeholder="01234-567-890" pattern="[0-9]{5}-[0-9]{3}-[0-9]{3}" onChange = {this.changeHandler} />
                     </div>
                     <div>
                         <label>Age</label>
-                        <input type = 'age' name = 'age' value = {this.state.age} onChange = {this.changeHandler} />
+                        <input type = 'number' name = 'age' value = {this.state.age} onChange = {this.changeHandler} />
                     </div>
                     <div className = {Styles.items}>
                         <p>Gender</p>
@@ -110,16 +107,6 @@ class RegisterForm extends Component{
                         <input type = "checkbox" name = "React Native" value = "React Native" onChange = {this.checkboxChangeHandler}  />
                         <label>React Native</label>
                     </div>
-                    {/* <div>
-                        <label>Date Of Birth</label>
-                        <input type = "date" name = 'dateOfBirth' value = {this.state.dateOfBirth} onChange = {this.changeHandler} />
-                    </div>
-                    <div>
-                        <label>Your Favourite Color</label>
-                        <input type = "color" name = 'favouriteColor' value = {this.state.favouriteColor} onChange = {this.changeHandler} />
-                    </div> */}
-                    {/* <textarea type = "textarea" name = "bio" value = {this.state.bio} onChange = {this.changeHandler} rows = '5' cols = '30'>
-                    </textarea> */}
                     <button onClick = {this.submitHandler} >Submit</button>
                 </form>
             </div>
