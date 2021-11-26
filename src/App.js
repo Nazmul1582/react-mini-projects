@@ -4,13 +4,13 @@ import RegisterForm from './component/register-form/RegisterForm';
 
 function App() {
   return (
-    <div className="App">
-      <FetchDataById />
+    <div>
+      <RegisterForm />
     </div>
-    // <div>
-    //   <RegisterForm />
-    // </div>
     
+    // <div className="App">
+    //   <FetchDataById />
+    // </div>
   );
 }
 

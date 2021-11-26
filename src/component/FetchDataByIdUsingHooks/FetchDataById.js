@@ -1,8 +1,17 @@
 import axios from 'axios';
-import React, { useState} from 'react';
+import React, { useEffect, useState} from 'react';
 const FetchDataById = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState({});
     const [id , setId] = useState('')
+
+    // useEffect(() => {
+    //     async function fetchData(){
+    //         let res = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
+    //         setData(res.data)
+    //         console.log(res);
+    //     }
+    //     fetchData()
+    // }, [id])
 
     const showPostHandler = async() => {
         let res = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
@@ -20,10 +29,6 @@ const FetchDataById = () => {
                 />
             </div>
             <button onClick={()=> showPostHandler()}>Show Post</button>
-
-            <br/> 
-            <br/>
-
             {
                 <div>
                     <p>User id : {data.userId}</p>

@@ -44,8 +44,8 @@ class RegisterForm extends Component{
     render(){
         return (
             <div className = {Styles.container}>
-                <h1>Register Form </h1>
-                <form>
+                <h1 className={Styles.title}>Register Form </h1>
+                <form className={Styles.registerForm}>
                     <div>
                         <label>First Name</label>
                         <input type = 'text' name = 'fname' value = {this.state.fname} onChange = {this.changeHandler} />
