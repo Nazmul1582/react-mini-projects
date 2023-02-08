@@ -1,3 +1,3 @@
-# Simple Counter App Using React and Tailwind CSS
+# Bio Data App Using React and Tailwind CSS
 
-![simple-counter-app](./src/assets/simple-counter-app.png)
+![simple-counter-app](./src/assets/bioData.png)
