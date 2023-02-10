@@ -11,12 +11,18 @@ const persons = [
     dateOfBirth: "09-02-1998",
     skills: ["HTML", "CSS", "JavaScript", "React Js", "TailwindCSS"],
     interests: ["Coding", "Reading", "Traveling"],
-    contact: {
-      phone: "01812-345678",
-      email: "nazmul@gmail.com",
-      github: "https://github.com/nazmul",
-      website: "https://nazmul.com",
-    },
+    contact: [
+      {
+        name: "phone",
+        value: "01812-345678",
+      },
+      { name: "email", value: "nazmul@gmail.com" },
+      {
+        name: "github",
+        value: "https://github.com/nazmul",
+      },
+      { name: "website", value: "https://nazmul.com" },
+    ],
   },
   {
     name: "Nahidul Islam",
@@ -34,12 +40,18 @@ const persons = [
       "TailwindCSS",
     ],
     interests: ["Writing", "Reading", "Traveling"],
-    contact: {
-      phone: "01812-345678",
-      email: "nahid@gmail.com",
-      github: "https://github.com/nahid",
-      website: "https://nahid.com",
-    },
+    contact: [
+      {
+        name: "phone",
+        value: "01812-345678",
+      },
+      { name: "email", value: "nahid@gmail.com" },
+      {
+        name: "github",
+        value: "https://github.com/nahid",
+      },
+      { name: "website", value: "https://nahid.com" },
+    ],
   },
   {
     name: "Md. Saikat Molla",
@@ -57,12 +69,18 @@ const persons = [
       "Express",
     ],
     interests: ["Playing", "Traveling", "Reading"],
-    contact: {
-      phone: "01812-345678",
-      email: "saikat@gmail.com",
-      github: "https://github.com/saikat",
-      website: "https://saikat.com",
-    },
+    contact: [
+      {
+        name: "phone",
+        value: "01812-345678",
+      },
+      { name: "email", value: "saikat@gmail.com" },
+      {
+        name: "github",
+        value: "https://github.com/saikat",
+      },
+      { name: "website", value: "https://saikat.com" },
+    ],
   },
 ];
 export default persons;
